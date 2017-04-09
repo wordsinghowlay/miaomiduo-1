@@ -1,0 +1,398 @@
+{
+    "success" : true,
+    "errorMessage" : null,
+    "data": [
+{
+"name": "热卖选购",
+"catelogyList": [
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3847/83/782238594/9054/8b9628af/581b3827N128c2e9d.jpg",
+"searchKey": "夹克男2017",
+"name": "新款夹克",
+"virtualFlag": 1,
+"cid": 100004110
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3061/69/5826767080/7128/ce5ba74a/58886fa5N181556e1.jpg",
+"searchKey": "衬衫男2017",
+"name": "精品衬衫",
+"virtualFlag": 1,
+"cid": 100004109
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3061/299/5885824366/6941/6d6d25e8/5888726fN3decc974.jpg",
+"searchKey": "T恤男2017",
+"name": "新品T恤",
+"virtualFlag": 1,
+"cid": 100007954
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3196/219/4950573311/7175/e9eefcf9/585cbe8fN77d56984.jpg",
+"searchKey": "牛仔裤男",
+"name": "牛仔裤",
+"virtualFlag": 1,
+"cid": 100004108
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3910/67/766702077/6286/2aac9c11/585cbea6Nc6e01080.jpg",
+"searchKey": "休闲裤男",
+"name": "休闲裤",
+"virtualFlag": 1,
+"cid": 100004105
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3733/73/1045244090/3569/ea79e73d/581b3936N0356a065.jpg",
+"searchKey": "西裤男",
+"name": "西裤",
+"virtualFlag": 1,
+"cid": 100007952
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3550/271/1021766996/5554/896b4c24/581b3a3aNec4eed84.jpg",
+"searchKey": "卫衣男",
+"name": "潮流卫衣",
+"virtualFlag": 1,
+"cid": 100008002
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3760/77/1369184438/8220/3db891c4/5822ca20N75fef3c0.jpg",
+"searchKey": "羽绒服男",
+"name": "时尚羽绒",
+"virtualFlag": 1,
+"cid": 100004104
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3220/353/5772469091/8477/3b7c935c/5888777cN5ed5e219.jpg",
+"searchKey": "针织衫男",
+"name": "针织衫",
+"virtualFlag": 1,
+"cid": 100003959
+}
+],
+"columNum": 3,
+"cid": 100003882
+},
+{
+"name": "T恤",
+"catelogyList": [
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3097/333/5946749447/6941/6d6d25e8/58887509Ndb5f8d20.jpg",
+"searchKey": "T恤男2017",
+"name": "新款T恤",
+"virtualFlag": 1,
+"cid": 100007956
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3889/6/1665619779/8021/d3a73c35/5888753eN2fa0e76d.jpg",
+"searchKey": "长袖T恤男",
+"name": "长袖T恤",
+"virtualFlag": 1,
+"cid": 100004178
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t4051/1/1686305419/3519/4f7af4af/58887575N022fffe2.jpg",
+"searchKey": "短袖T恤男",
+"name": "短袖T恤",
+"virtualFlag": 1,
+"cid": 100004175
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3229/69/5907325822/5896/b1dc0a77/5888759cN371c9948.jpg",
+"searchKey": "纯棉T恤男",
+"name": "纯棉T恤",
+"virtualFlag": 1,
+"cid": 100004181
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t4108/36/1642741678/5705/a6e1c500/588875c4Nfa0205dc.jpg",
+"searchKey": "印花T恤男",
+"name": "印花T恤",
+"virtualFlag": 1,
+"cid": 100004182
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3178/46/5801098350/4526/a6ea55b3/588875f5N40cbbc85.jpg",
+"searchKey": "纯色T恤男",
+"name": "纯色T恤",
+"virtualFlag": 1,
+"cid": 100004179
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t4075/66/1631039590/3734/9d81b271/58887620Nf145dd43.jpg",
+"searchKey": "翻领T恤男",
+"name": "翻领T恤",
+"virtualFlag": 1,
+"cid": 100004180
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3211/79/5740600256/6355/a82385b8/58887646Nbeb66f28.jpg",
+"searchKey": "条纹T恤男",
+"name": "条纹T恤",
+"virtualFlag": 1,
+"cid": 100004183
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3169/321/5917076786/5174/7daa5a2/5888766dNcd18f506.jpg",
+"searchKey": "亚麻T恤男",
+"name": "亚麻T恤",
+"virtualFlag": 1,
+"cid": 100004259
+}
+],
+"columNum": 3,
+"cid": 100004173
+},
+{
+"name": "牛仔裤",
+"catelogyList": [
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3661/230/1043227091/4672/8a836cde/581b3e62N08799ef9.jpg",
+"searchKey": "加绒牛仔裤男",
+"name": "加绒牛仔",
+"virtualFlag": 1,
+"cid": 100004113
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3658/270/1051484666/4558/1d1f07b6/581b3e88N62622ab7.jpg",
+"searchKey": "直筒牛仔裤男",
+"name": "直筒牛仔",
+"virtualFlag": 1,
+"cid": 100004114
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3775/224/1003505252/4237/8287dfe/581b3ebdNd06ba2b9.jpg",
+"searchKey": "修身牛仔裤男",
+"name": "修身牛仔",
+"virtualFlag": 1,
+"cid": 100004115
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3319/98/1041364635/4129/cf16015/581b3f13Nb02e915c.jpg",
+"searchKey": "纯色牛仔裤男",
+"name": "纯色牛仔",
+"virtualFlag": 1,
+"cid": 100004116
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3676/150/1018184607/4493/3f3878b7/581b3f3bNc7323d6c.jpg",
+"searchKey": "小脚牛仔裤男",
+"name": "小脚牛仔",
+"virtualFlag": 1,
+"cid": 100004117
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3433/216/1030767221/4452/1e015eee/581b3f62N4d0adbc4.jpg",
+"searchKey": "弹力牛仔裤男",
+"name": "弹力牛仔",
+"virtualFlag": 1,
+"cid": 100004118
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3310/254/1060990446/3679/2d6234f7/581b3f89N56435363.jpg",
+"searchKey": "黑色牛仔裤男",
+"name": "黑色牛仔",
+"virtualFlag": 1,
+"cid": 100004119
+},
+{
+"icon": "http://m.360buyimg.com/mo…fa.jpg",
+"searchKey": "A21官方旗舰店",
+"name": "A21",
+"virtualFlag": 1,
+"cid": 100004243
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3259/155/4591848195/7599/800a5ad/584fc4efN1bb245a7.jpg",
+"searchKey": "真维斯官方旗舰店 ",
+"name": "真维斯",
+"virtualFlag": 1,
+"cid": 100004258
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3853/325/384515602/8553/29ee0e94/584fc500N0d97b717.jpg",
+"searchKey": "班尼路官方旗舰店",
+"name": "班尼路",
+"virtualFlag": 1,
+"cid": 100004253
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2278/22/739635825/13695/e110452/56235509N288584fa.jpg",
+"searchKey": "劲霸男装旗舰店",
+"name": "劲霸",
+"virtualFlag": 1,
+"cid": 100004238
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2083/311/738465708/10027/efd128b2/56235753N08edf1a1.jpg",
+"searchKey": "杉杉官方旗舰店",
+"name": "杉杉",
+"virtualFlag": 1,
+"cid": 100004240
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t1867/67/710697226/9905/730b4209/56235560N2518b2e6.jpg",
+"searchKey": "七匹狼官方旗舰店",
+"name": "七匹狼",
+"virtualFlag": 1,
+"cid": 100004239
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3268/78/4526361542/5446/63649a1b/584fc517N258a451d.jpg",
+"searchKey": "红豆男装官方旗舰店",
+"name": "红豆",
+"virtualFlag": 1,
+"cid": 100004250
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3100/65/4642998771/4709/e357c83e/584fc52aN117ac313.jpg",
+"searchKey": "太平鸟男装旗舰店",
+"name": "太平鸟",
+"virtualFlag": 1,
+"cid": 100004257
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3679/80/2354268329/7739/f4beaeef/584fc13eNd892c041.jpg",
+"searchKey": "Levis 官方旗舰店",
+"name": "Levi's",
+"virtualFlag": 1,
+"cid": 300013154
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t1813/12/2077051210/4988/66fbb4ba/56235845Nba3437c1.jpg",
+"searchKey": "SELECTED京东官方旗舰店",
+"name": "SELECTED",
+"virtualFlag": 1,
+"cid": 100004244
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2326/59/720120537/8987/d6e59e5e/56235bddN40f5feec.jpg",
+"searchKey": "柒牌官方旗舰店",
+"name": "柒牌",
+"virtualFlag": 1,
+"cid": 100004256
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t1816/206/2024574337/10113/af38c0ea/56235a78N04238e57.jpg",
+"searchKey": "九牧王官方旗舰店",
+"name": "九牧王",
+"virtualFlag": 1,
+"cid": 100004251
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2629/361/1042832040/4690/2cad1d98/573193c8Nc21dc01e.jpg",
+"searchKey": "佐丹奴官方旗舰店",
+"name": "佐丹奴",
+"virtualFlag": 1,
+"cid": 100004255
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3904/213/454107256/4899/fcdb7961/584fc550N5b190a63.jpg",
+"searchKey": "AK官方旗舰店",
+"name": "AK",
+"virtualFlag": 1,
+"cid": 100005766
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3247/338/4612378143/4677/6bd4a7a6/584fc1ffN6d12d286.jpg",
+"searchKey": "凡客诚品官方旗舰店",
+"name": "凡客",
+"virtualFlag": 1,
+"cid": 300013152
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2326/363/720091257/5995/33c9c767/562354d5N362c4658.jpg",
+"searchKey": "卡宾男装旗舰店",
+"name": "卡宾",
+"virtualFlag": 1,
+"cid": 100004237
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t4084/167/450613352/7332/949c641d/584fc242Nadd84508.jpg",
+"searchKey": "CAMEL骆驼男装旗舰店",
+"name": "骆驼",
+"virtualFlag": 1,
+"cid": 100004252
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t1876/68/2180712340/9724/10c09bd8/569f61f8N193b5e12.jpg",
+"searchKey": "Hazzys旗舰店",
+"name": "HAZZYS",
+"virtualFlag": 1,
+"cid": 100005762
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3787/10/2223816158/8029/ea0d3673/584fc282N4c277ddf.jpg",
+"searchKey": "马克华菲官方旗舰店",
+"name": "马克华菲",
+"virtualFlag": 1,
+"cid": 100004248
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3976/256/427904817/4061/b9464eb9/584fc2c0N47c380fd.jpg",
+"searchKey": "波司登官方旗舰店",
+"name": "波司登",
+"virtualFlag": 1,
+"cid": 100004249
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2059/171/703363027/9055/94aad22d/56235979Na942f205.jpg",
+"searchKey": "gxg.jeans旗舰店",
+"name": "gxg.geans",
+"virtualFlag": 1,
+"cid": 100004247
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2461/291/687732835/9864/bd1672b8/5623543aNf34a7a1e.jpg",
+"searchKey": "Dickies官方旗舰店",
+"name": "Dickies",
+"virtualFlag": 1,
+"cid": 100004234
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3979/342/509539541/28743/9bc07601/584fc49cN1d419d00.jpg",
+"searchKey": "唐狮官方旗舰店",
+"name": "唐狮",
+"virtualFlag": 1,
+"cid": 100004254
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3301/219/4671088116/4473/4469ef1d/584fc37fNabf77c20.jpg",
+"searchKey": "雅戈尔官方旗舰店",
+"name": "雅戈尔",
+"virtualFlag": 1,
+"cid": 100005768
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2332/335/2087387731/8284/fdeb20ca/569f623eN494845cd.jpg",
+"searchKey": "vicutu威可多官方旗舰店",
+"name": "威可多",
+"virtualFlag": 1,
+"cid": 100005764
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2374/19/711456829/9751/1ec19c74/56235889N84e89759.jpg",
+"searchKey": "LACOSTE官方旗舰店",
+"name": "Lacoste",
+"virtualFlag": 1,
+"cid": 100004245
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t4093/40/466018348/21981/2fb765bf/584fc4c5N920d6d18.jpg",
+"searchKey": "Tommy Hilfiger 官方商城",
+"name": "TOMMY HILFIGER",
+"virtualFlag": 1,
+"cid": 100004246
+},
+{
+"icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t3055/125/4698163194/7684/b3f916de/584fc577Nb68194ad.jpg",
+"searchKey": "鸭鸭官方旗舰店",
+"name": "鸭鸭",
+"virtualFlag": 1,
+"cid": 100004233
+}
+],
+"columNum": 3,
+"cid": 100004231
+}
+]
+}

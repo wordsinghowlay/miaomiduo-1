@@ -1,0 +1,18 @@
+{
+    "success" : true,
+    "data"    : {
+        "title" : "店铺名字",
+        "logo" : "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2790396100,129677017&fm=23&gp=0.jpg",
+        "bgImg" : "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2790396100,129677017&fm=23&gp=0.jpg",
+        "content" : "提问内容",
+        "commentList" : [
+            {
+                "author" : "评论人姓名",
+                "motto" : "座右铭",
+                "img" : "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2790396100,129677017&fm=23&gp=0.jpg",
+                "content" : "评论内容"
+            }
+        ]
+
+    }
+}

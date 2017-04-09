@@ -1,0 +1,98 @@
+{
+    "success" : true,
+    "errorMessage" : null,
+    "data": [
+        {
+            "name": "专场推荐",
+            "catelogyList": [
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s130x130_jfs/t4135/29/652079325/9349/12ef90c5/58b78d16N1ee317f2.jpg",
+                    "name": "3.3超级战略单品",
+                    "path": "0_99999999_300014102",
+                    "action": "https://sale.jd.com/m/act/lhyRYJDSTC.html",
+                    "virtualFlag": 3,
+                    "columNum": 3,
+                    "cid": 300014102,
+                    "destination": "car_to"
+                },
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s130x130_jfs/t4066/54/467847264/15196/5b8aa181/58b39019N8e1dbc75.jpg",
+                    "name": "辣妈正青春",
+                    "path": "0_99999999_100007730",
+                    "action": "https://h5.m.jd.com/active/4NTJKnypfhQBnXCwLio49CgvSFPV/index.html",
+                    "virtualFlag": 3,
+                    "columNum": 3,
+                    "cid": 100007730,
+                    "destination": "car_to"
+                },
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s130x130_jfs/t4384/79/686427577/12080/704f7986/58b7f7e8N61c4f884.jpg",
+                    "name": "360 N5新品抢",
+                    "path": "0_99999999_100007130",
+                    "action": "http://sale.jd.com/m/act/lhyRYJDSTC.html",
+                    "virtualFlag": 3,
+                    "columNum": 3,
+                    "cid": 100007130,
+                    "destination": "car_to"
+                }
+            ]
+        },
+        {
+            "name": "热门分类",
+            "catelogyList": [
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2782/149/1998822772/17899/b85cc0f3/57550c12Nba029c3e.png",
+                    "name": "手机",
+                    "path": "0_44449999_655",
+                    "columNum": 3,
+                    "cid": 655
+                },
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t340/186/1520019972/4535/fc9624f9/543c8f8aN9eab4fa0.jpg",
+                    "name": "笔记本",
+                    "path": "0_44449999_672",
+                    "columNum": 3,
+                    "cid": 672
+                },
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2893/176/1045856721/6331/21075b96/5732d235N90395e10.jpg",
+                    "name": "空调",
+                    "path": "0_44449999_870",
+                    "columNum": 3,
+                    "cid": 870
+                },
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t310/345/1515921787/4739/6bd8f7e4/543cd113Nb6638c8e.jpg",
+                    "name": "收纳用品",
+                    "path": "0_44449999_1655",
+                    "columNum": 3,
+                    "cid": 1655
+                },
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t331/362/1515835677/3566/461716a8/543c8a67Ne129f018.jpg",
+                    "name": "炒锅",
+                    "path": "0_44449999_6199",
+                    "virtualFlag": 0,
+                    "columNum": 3,
+                    "cid": 6199
+                },
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t913/290/173123020/11082/e3dd8c46/5507c2e4N78755364.jpg",
+                    "name": "啤酒",
+                    "path": "0_44449999_9439",
+                    "columNum": 3,
+                    "cid": 9439
+                },
+                {
+                    "icon": "http://m.360buyimg.com/mobile/s100x100_jfs/t2647/276/633288982/11637/e9bb1b7a/571dc6a8Nbd641f1b.jpg",
+                    "name": "火车票",
+                    "action": "http://train.m.jd.com/",
+                    "virtualFlag": 3,
+                    "columNum": 3,
+                    "cid": 100008434,
+                    "destination": "car_to"
+                }
+            ]
+        }
+    ]
+}
