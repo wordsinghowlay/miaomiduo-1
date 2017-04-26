@@ -12,7 +12,6 @@
     "vue-lazyload": "^1.0.0-rc12",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.3",
-    "vue-template-compiler": "^2.1.10",
     "vuex": "^2.0.0"
   },
   "devDependencies": {
