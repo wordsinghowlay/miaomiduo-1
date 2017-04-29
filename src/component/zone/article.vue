@@ -72,7 +72,7 @@ export default {
     methods : {
     },
     created() {
-        this.$store.dispatch('getArticle',{type:this.$route.params.type,id:this.$route.params.id});
+        this.$store.dispatch('getArticle',{type:'article',id:this.$route.params.id});
     },
     name: 'article',
     components: components

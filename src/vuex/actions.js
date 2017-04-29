@@ -213,70 +213,70 @@ export const getAppInitData = ({commit},data) => {
     // userApi.userMas().then((res) => {
     //     commit(types.Set_user_info, res.body);
     // });
-    var p1 = new Promise(
-        function(resolve,reject){
-            console.log('开始定位');
-            var geolocation = new BMap.Geolocation();
-            geolocation.getCurrentPosition(function(r){
-                if(this.getStatus() == BMAP_STATUS_SUCCESS)
-                    {
-                        console.log('定位成功');
-                        resolve(r)
-                    }
-                else if(this.getStatus() == BMAP_STATUS_UNKNOWN_LOCATION)
-                    {
-                        reject();
-                        //位置结果未知
-                        console.log('位置结果未知');
-                    }
-                else if(this.getStatus() == BMAP_STATUS_TIMEOUT)
-                    {
-                        reject();
-                        //超时
-                        console.log('超时');
-                    }
-                else if(this.getStatus() == BMAP_STATUS_INVALID_KEY)
-                    {
-                        reject();
-                        //非法密钥
-                        console.log('非法密钥');
-                    }
-                else if(this.getStatus() == BMAP_STATUS_INVALID_REQUEST)
-                    {
-                        reject();
-                        //非法请求
-                        console.log('非法请求');
-                    }
-                else
-                    {
-                        reject();
-                        console.log('定位错误');
-                        alert('failed'+this.getStatus());
-                    }
-            },{enableHighAccuracy: true})
-        }
-    );
-    p1.then(
-        function(r){
-            console.log('拿到定位数据');
-            commit(types.Set_position_data,{lng:r.point.lng,lat:r.point.lat,city:r.address.city})
-        },
-        function(){
-            console.log('失败')
-        }
-    )
-
-    var p = Promise.all([p1]);
-    p.then(
-        function(){
-            commit(types.Set_cover_state,false);
-        },
-        function(){
-            commit(types.Set_cover_state,false);
-            commit(types.Set_pos_state);
-        }
-    );
-
+    // var p1 = new Promise(
+    //     function(resolve,reject){
+    //         console.log('开始定位');
+    //         var geolocation = new BMap.Geolocation();
+    //         geolocation.getCurrentPosition(function(r){
+    //             if(this.getStatus() == BMAP_STATUS_SUCCESS)
+    //                 {
+    //                     console.log('定位成功');
+    //                     resolve(r)
+    //                 }
+    //             else if(this.getStatus() == BMAP_STATUS_UNKNOWN_LOCATION)
+    //                 {
+    //                     reject();
+    //                     //位置结果未知
+    //                     console.log('位置结果未知');
+    //                 }
+    //             else if(this.getStatus() == BMAP_STATUS_TIMEOUT)
+    //                 {
+    //                     reject();
+    //                     //超时
+    //                     console.log('超时');
+    //                 }
+    //             else if(this.getStatus() == BMAP_STATUS_INVALID_KEY)
+    //                 {
+    //                     reject();
+    //                     //非法密钥
+    //                     console.log('非法密钥');
+    //                 }
+    //             else if(this.getStatus() == BMAP_STATUS_INVALID_REQUEST)
+    //                 {
+    //                     reject();
+    //                     //非法请求
+    //                     console.log('非法请求');
+    //                 }
+    //             else
+    //                 {
+    //                     reject();
+    //                     console.log('定位错误');
+    //                     alert('failed'+this.getStatus());
+    //                 }
+    //         },{enableHighAccuracy: true})
+    //     }
+    // );
+    // p1.then(
+    //     function(r){
+    //         console.log('拿到定位数据');
+    //         commit(types.Set_position_data,{lng:r.point.lng,lat:r.point.lat,city:r.address.city})
+    //     },
+    //     function(){
+    //         console.log('失败')
+    //     }
+    // )
+    //
+    // var p = Promise.all([p1]);
+    // p.then(
+    //     function(){
+    //         commit(types.Set_cover_state,false);
+    //     },
+    //     function(){
+    //         commit(types.Set_cover_state,false);
+    //         commit(types.Set_pos_state);
+    //     }
+    // );
+    commit(types.Set_cover_state,false);
     if(store.has('mallHisSearchArr')){
         commit(types.Set_search_list,{data:store.get('mallHisSearchArr'),type:'mall'})
     }

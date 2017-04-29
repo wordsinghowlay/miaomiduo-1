@@ -61,7 +61,8 @@ export default {
             searchActive : false,
             headConfig : {
                 title : "喵服务",
-                areaName : true,
+                leftIcon : true,
+                leftIconClass : 'icon-liebiao',
                 rightIcon : true,
                 rightIconClass : 'icon-search'
             }

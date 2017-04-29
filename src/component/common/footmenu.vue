@@ -92,7 +92,7 @@
             <router-link to="/tcshop" class="tcshop" :class="[footMenuActive==3 ?'cur':'']">
                 <div @click="setFootMenuActive(3)">
                     <i class="iconfont icon-cat1" :class="[footMenuActive==3 ?'cur':'']"></i>
-                    <p :class="[footMenuActive==3 ?'cur':'']">喵服务</p>
+                    <p :class="[footMenuActive==3 ?'cur':'']">喵用品</p>
                 </div>
             </router-link>
             <router-link to="/shopCart" class="shopcar" :class="[footMenuActive==4 ?'cur':'']">

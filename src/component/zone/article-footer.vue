@@ -95,7 +95,7 @@
                     <p>加入收藏</p>
                 </div>
             </a>
-            <router-link to="/shopCart" class="shopcar">
+            <router-link to="/zone/comment/1" class="shopcar">
                 <div>
                     <i class="iconfont icon-iconfontpinglun"></i>
                     <p>评论列表</p>
