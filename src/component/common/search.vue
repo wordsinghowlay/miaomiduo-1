@@ -142,14 +142,15 @@
     <header class='clearfix'>
         <i class='iconfont icon-zuo' @click="hide"></i>
         <div class='searchBox-build clearfix'>
-            <div class="more" v-if="searchType=='tc'" @click="initData.selectShow=!initData.selectShow">
+            <div class="more"  @click="initData.selectShow=!initData.selectShow">
                 {{initData.selectText}}<i class="iconfont icon-down"></i>
                 <ul v-show="initData.selectShow">
-                    <li @click="setTcSearchType('商家')">商家</li>
+                    <li @click="setTcSearchType('商家')">猫咪</li>
+                    <li @click="setTcSearchType('商品')">猫咪店铺</li>
                     <li @click="setTcSearchType('商品')">商品</li>
+                    <li @click="setTcSearchType('商品')">商品店铺</li>
                 </ul>
             </div>
-            <i class='iconfont icon-iconfontsearch' v-if="searchType=='mall'"></i>
             <input type='text' v-model="searchText" class='searchText-build' placeholder='输入关键词' />
             <i class='iconfont icon-roundclosefill' @click="searchText=''"></i>
         </div>
@@ -207,7 +208,7 @@ export default {
         return {
             searchText : '',
             initData : {
-                selectText : '商家',
+                selectText : '猫咪',
                 selectShow : false
             }
         }

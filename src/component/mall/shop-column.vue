@@ -31,7 +31,7 @@
 
 <div class="shop-column-box">
     <div class="title">
-        商家推荐
+        店铺推荐
     </div>
     <div class="shop-column">
         <div class="column-a">
