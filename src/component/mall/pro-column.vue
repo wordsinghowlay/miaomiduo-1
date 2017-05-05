@@ -41,7 +41,7 @@
     <div class="pro-column">
         <ul class="pro-column-list">
             <li v-for="data in arr">
-                <router-link to="/index">
+                <router-link to="/searchList">
                     <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488544438658&di=9fd09821a1201eaeaac62b582d816bbf&imgtype=0&src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Fface%2Fb96100a1ab49d70a2a064b52ca86bbc57590cad9.jpg" alt="">
                     <p>{{data}}</p>
                 </router-link>

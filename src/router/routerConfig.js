@@ -32,7 +32,11 @@ const changeName    = resolve => {require(['./../component/user/change-name.vue'
 const article       = resolve => {require(['./../component/zone/article.vue'], resolve)};
 const shopInfo      = resolve => {require(['./../component/mall/shop-info.vue'], resolve)};
 const artFootBar    = resolve => {require(['./../component/zone/article-footer.vue'], resolve)};
-const commentList    = resolve => {require(['./../component/zone/comment-list.vue'], resolve)};
+const infoFootBar   = resolve => {require(['./../component/mall/info-footer.vue'],resolve)};
+const commentList   = resolve => {require(['./../component/zone/comment-list.vue'], resolve)};
+const searchList    = resolve => {require(['./../component/mall/search-list.vue'],resolve)};
+const infoPage      = resolve => {require(['./../component/mall/info-page.vue'],resolve)};
+
 const router = new VueRouter({
     routes: [
         {
@@ -101,10 +105,10 @@ const router = new VueRouter({
                     }
                 },
                 {
-                    path: '/tcshop',
+                    path: '/infoPage',
                     components: {
-                        main: tcshop,
-                        footerMenu : footMenu
+                        main: infoPage,
+                        footerMenu : infoFootBar
                     }
                 },
                 {
@@ -165,30 +169,6 @@ const router = new VueRouter({
                     }
                 },
                 {
-                    path: '/myWallet',
-                    components: {
-                        main: myWallet
-                    }
-                },
-                {
-                    path: '/myEnvlop',
-                    components: {
-                        main: myEnvlop
-                    }
-                },
-                {
-                    path: '/myActivity',
-                    components: {
-                        main: myActivity
-                    }
-                },
-                {
-                    path: '/myPay',
-                    components: {
-                        main: myPay
-                    }
-                },
-                {
                     path:'/specialAct/:actId/part/:partId',
                     components:{
                         main: specialAct,
@@ -203,21 +183,9 @@ const router = new VueRouter({
                     }
                 },
                 {
-                    path:'/orderConfirm',
+                    path:'/searchList',
                     components:{
-                        main: orderConfirm
-                    }
-                },
-                {
-                    path:'/payDo',
-                    components:{
-                        main: payDo
-                    }
-                },
-                {
-                    path:'/changeName',
-                    components:{
-                        main: changeName
+                        main: searchList
                     }
                 }
             ]

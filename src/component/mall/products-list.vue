@@ -1,99 +1,83 @@
-<style>
-
-/* line 2, ../sass/ie.scss */
-
-#products-list-box li {
-    padding: 0.14rem 0.18rem 0.14rem 2.34rem;
+<style scoped>
+.index-box{
+    padding: 0.8rem 0;
+}
+.products-list{
+    overflow: hidden;
+}
+.products-list li {
     background: #fff;
-    height: 2rem;
-    position: relative;
-    margin-bottom: 0.18rem;
+    width: 3.52rem;
+    float: left;
+    border-radius: 0.08rem 0.08rem 0 0;
+    margin-left: 0.15rem;
+    margin-bottom: 0.15rem;
 }
-
-
-/* line 4, ../sass/ie.scss */
-
-#products-list-box li img {
+.products-list li img{
     display: block;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    left: 0.18rem;
-    top: 0.14rem;
+    height: 4.62rem;
+    border-radius: 0.08rem 0.08rem 0 0;
 }
 
-
-/* line 5, ../sass/ie.scss */
-
-#products-list-box li .proName {
-    line-height: 0.46rem;
-    height: 0.92rem;
-    font-size: 0.3rem;
+.content{
+    padding: 0.15rem;
+}
+.content h3{
     color: #000;
-    text-align: left;
+}
+.content div{
     overflow: hidden;
 }
+.content .label{
 
-
-/* line 8, ../sass/ie.scss */
-
-#products-list-box li .subName {
-    overflow: hidden;
-    line-height: 0.6rem;
 }
-
-
-/* line 10, ../sass/ie.scss */
-
-#products-list-box li .subName span {
+.content .label span{
+    display: inline-block;
+    line-height: 0.36rem;
+    height: 0.36rem;
+    padding: 0 0.08rem;
+    background: #eff3f6;
+    margin-bottom: 0.06rem;
+    margin-right: 0.06rem;
+    color: #000;
+    font-size: 0.2rem;
+}
+.content .price{
+    color: #000;
+    line-height: 0.4rem;
+    font-size: 0.32rem;
+}
+.content .price i{
+    font-size: 0.32rem;
+    line-height: 0.4rem;
+}
+.content .price em{
+    float: left;
+}
+.content .price span{
     float: right;
-    font-size: 0.24rem;
-    color: #999999;
 }
-
-
-/* line 14, ../sass/ie.scss */
-
-#products-list-box li .proPrice {
-    overflow: hidden;
-    color: #ff2772;
-    font-size: 0.24rem;
-    text-align: left;
-}
-
-
-/* line 16, ../sass/ie.scss */
-
-#products-list-box li .proPrice del {
-    padding: 0 0.1rem;
-    color: #999;
-}
-
-
-/* line 17, ../sass/ie.scss */
-
-#products-list-box li .proPrice span {
-    float: right;
-    background-color: #FF833E;
-    color: #fff;
-    padding: 0 0.1rem;
-    border-radius: 0.04rem;
-}
-
 </style>
 
 <template>
 
-<div id="products-list-box">
-    <ul v-infinite-scroll="loadMore" infinite-scroll-disabled="busy" infinite-scroll-distance="10">
-        <li v-for="data in proData">
-            <router-link :to="'/goodsDetail/pro/'+data.id">
-                <img :src="data.prodImg|imgFilter(1)">
-                <p class="proName" v-html="data.prodName"></p>
-                <p class="subName"><span>销量{{data.soldCount}}</span></p>
-                <p class="proPrice">
-                    ¥<b>{{data.origPrice}}</b><del>¥{{data.origPrice}}</del><span>可抵用{{data.vouchers}}优券</span>
-                </p>
+<div class="index-box">
+    <ul class="products-list">
+        <li v-for="data in 10">
+            <router-link to="proInfo">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488545109668&di=0529330ecaa5f859f1f0f871b2304348&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201608%2F23%2F20160823143022_MRjAU.thumb.700_0.jpeg" />
+                <div class="content">
+                    <h3>小叮当</h3>
+                    <div class="label">
+                        <span>品种:英短</span>
+                        <span>所在地:青岛</span>
+                        <span>品质:双C</span>
+                    </div>
+                    <div class="price">
+                        <em>￥123</em>
+                        <span><i class="iconfont icon-xin1"></i>456</span>
+                    </div>
+                </div>
             </router-link>
         </li>
     </ul>
@@ -107,61 +91,18 @@ import {
     mapGetters
 }
 from 'vuex'
-const components = {}
+const components = {
+
+}
 export default {
     computed: mapGetters({
-        filterState: 'mallFilterState'
     }),
     data() {
         return {
-            pagetitle: '商品列表',
-            productName: '',
-            busy: false
+            pagetitle: '商品列表'
         }
     },
     methods: {
-        loadMore: function() {
-            if (this.proData.length == 0) {
-                return;
-            }
-            if (this.$route.params.type=='menu') {
-                let categoryId = this.$route.params.id;
-                let catename = this.$route.params.name;
-                this.busy = true;
-                if (this.filterState.hasNext) {
-                    this.$store.dispatch('addPageNum', 'mall');
-                    this.$store.dispatch('loadMore_mall', {
-                        categoryId: this.filterState.categoryId,
-                        productName: this.productName,
-                        sortValue: this.filterState.sortValue,
-                        sortType: this.filterState.sortType,
-                        pageNo: this.filterState.pageNo,
-                        pageSize: this.filterState.pageSize
-                    })
-                    this.busy = false;
-                } else {
-                    this.busy = true;
-                }
-            }else if(this.$route.params.type=='search'){
-                this.busy = true;
-                if (this.filterState.hasNext) {
-                    this.$store.dispatch('addPageNum', 'mall');
-                    this.$store.dispatch('loadMore_mall_search', {
-                        searchStr   : this.$route.params.id,
-                        sortType    : this.filterState.sortType,
-                        categoryId  : this.filterState.categoryId,
-                        minPrice    : this.filterState.minPrice,
-                        maxPrice    : this.filterState.minPrice,
-                        pageNo      : this.filterState.pageNo,
-                        pageSize    : this.filterState.pageSize
-                    })
-                    this.busy = false;
-                } else {
-                    this.busy = true;
-                }
-            }
-
-        }
     },
     mounted: function(argument) {},
     props: ['proData'],
