@@ -36,15 +36,17 @@ body {
  -o-transition: all 0.4s linear;
  -ms-transition: all 0.4s linear;
  transition: all 0.4s linear;
- overflow: hidden;
+ margin-right: 0.1rem;
+}
+.nav li:nth-child(4){
+    margin-right: 0;
 }
 .nav li a {
  display: inline-block;
- width: 1.43rem;
- height: 1.43rem;
- /*padding: 0.25rem;*/
+ width: 1.42rem;
+ height: 1.42rem;
  border-radius: 50%;
- border-width: 8px;
+ border-width: 0.08rem;
  border-style: solid;
  box-sizing:border-box;
 }
@@ -71,7 +73,20 @@ body {
  -ms-animation: moveFromBottom 0.3s ease;
  animation: moveFromBottom 0.3s ease;
 }
-.nav li:nth-child(1) a {
+.nav li a{
+    color: #fff;
+    text-shadow: 0 1px 0 #adddec;
+    border-color: #a2cfde;
+    background-color: #7ec9e3;
+    box-shadow:0 0 0.15rem #4397b3;
+}
+.nav li a:hover{
+    color: #fff;
+    text-shadow: 0 1px 0 #9cdef2;
+    border-color: #4397b3;
+    background-color: #55c1e5;
+}
+/*.nav li:nth-child(1) a {
  color: #4d9683;
  text-shadow: 0 1px 0 #9de3cf;
  border-color: #549e89;
@@ -94,14 +109,14 @@ body {
  text-shadow: 0 1px 0 #f5e0ad;
  border-color: #dcc999;
  background-color: #f0cd78;
-}
-.nav li:nth-child(5) a {
+}*/
+/*.nav li:nth-child(5) a {
  color: #b468a2;
  text-shadow: 0 1px 0 #e8acd8;
  border-color: #d8abcd;
  background-color: #dd91cb;
-}
-.nav li:nth-child(1):hover a {
+}*/
+/*.nav li:nth-child(1):hover a {
  color: #0f775c;
  text-shadow: 0 1px 0 #81e6c9;
  border-color: #0a8462;
@@ -124,13 +139,13 @@ body {
  text-shadow: 0 1px 0 #ffe199;
  border-color: #b08f3e;
  background-color: #f8c64d;
-}
-.nav li:nth-child(5):hover a {
+}*/
+/*.nav li:nth-child(5):hover a {
  color: #a33689;
  text-shadow: 0 1px 0 #ec97d6;
  border-color: #b7569f;
  background-color: #dd70c3;
-}
+}*/
 .nav span {
  display: block;
  line-height:1.2rem;
@@ -219,6 +234,25 @@ body {
  font-feature-settings: "liga" 1, "dlig" 1;
  font-size: 30px;
 }
+.nav{
+    padding: 0.3rem 0;
+    background: #fff;
+    position: relative;
+}
+.nav ul{
+    width: 6.3rem;
+    margin: 0 auto;
+}
+.shop-content{
+
+}
+.shop-content h3.title{
+    border: 0.01rem solid #adddec;
+    background: #fff;
+    line-height: 0.7rem;
+    height: 0.7rem;
+    text-align: center;
+}
 </style>
 
 <template>
@@ -229,17 +263,33 @@ body {
         </div>
         <nav class="nav">
 			<ul>
-				<li><a><span>店铺介绍</span></a></li>
-				<li><a ><span>店铺首页</span></a></li>
-				<li><a><span>全部宝贝</span></a></li>
-				<li><a><span>新品上架</span></a></li>
-				<li><a><span>一二三四</span></a></li>
+				<li @click="active(1)"><a><span>店铺介绍</span></a></li>
+				<li @click="active(2)"><a><span>店铺推荐</span></a></li>
+				<li @click="active(3)"><a><span>全部宝贝</span></a></li>
+				<li @click="active(4)"><a><span>已售宝贝</span></a></li>
+				<!-- <li><a><span>一二三四</span></a></li> -->
 			</ul>
 		</nav>
-        <div>店铺介绍内容</div>
-        <div>店铺首页 热卖位置 预定位置 推荐位置</div>
-        <div>全部宝贝 筛选 《价格 种类 性别》 </div>
-        <div>新品上架 待定</div>
+        <div class="shop-content">
+            <div v-show="activeNum==1">
+                <h3 class="title">店铺介绍内容</h3>
+                <img src="./../../assets/images/a.jpg">
+                <img src="./../../assets/images/b.jpg">
+            </div>
+            <div v-show="activeNum==2">
+                <h3 class="title">最新上架</h3>
+                <product-list :proData="{num:4}"></product-list>
+            </div>
+            <div v-show="activeNum==3">
+                <h3 class="title">全部宝贝</h3>
+                <search-filter></search-filter>
+                <product-list :proData="{num:40}"></product-list>
+            </div>
+            <div v-show="activeNum==4">
+                <h3 class="title">已售宝贝</h3>
+                <product-list :proData="{num:20}"></product-list>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -251,8 +301,10 @@ import {
 from 'vuex'
 import headnav      from './../common/header.vue'
 import banner       from './../common/banner.vue'
+import productList  from './products-list.vue'
+import searchFilter from './search-filter.vue'
 const components = {
-    headnav, banner
+    headnav, banner, productList, searchFilter
 }
 export default {
     data() {
@@ -273,7 +325,8 @@ export default {
                 //修改swiper的父元素时，自动初始化swiper
                 // 如果需要分页器
                 pagination: '.swiper-pagination'
-            }
+            },
+            activeNum : 1
         }
     },
     computed: mapGetters({
@@ -281,6 +334,9 @@ export default {
     }),
     components: components,
     methods: {
+        active(index){
+            this.activeNum = index;
+        }
     },
     created() {
         this.$store.dispatch('getShopInfo',{type:this.$route.params.type,id:this.$route.params.id});

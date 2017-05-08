@@ -1,6 +1,6 @@
 <style scoped>
 .index-box{
-    padding: 0.8rem 0;
+    /*padding: 0.8rem 0;*/
 }
 .products-list{
     overflow: hidden;
@@ -61,10 +61,10 @@
 
 <template>
 
-<div class="index-box">
+<div>
     <ul class="products-list">
-        <li v-for="data in 10">
-            <router-link to="infoPage">
+        <li v-for="data in proData.num">
+            <router-link to="/infoPage">
                 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488545109668&di=0529330ecaa5f859f1f0f871b2304348&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201608%2F23%2F20160823143022_MRjAU.thumb.700_0.jpeg" />
                 <div class="content">
                     <h3>小叮当</h3>

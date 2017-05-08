@@ -1,14 +1,17 @@
 <style scoped>
 
-#goods-list-box {}
+.index-box{
+    padding: 0.8rem 0;
+}
 
 </style>
 
 <template>
 
-<div>
+<div class="index-box">
     <headnav v-bind:headConfig="headConfig" v-on:leftEvent="subMenu = true" v-on:showRight="searchActive = true"></headnav>
-    <productsList></productsList>
+    <searchFilter></searchFilter>
+    <productsList  :proData="{num:20}"></productsList>
 </div>
 
 </template>
@@ -22,10 +25,10 @@ from 'vuex'
 import headnav from './../common/header.vue'
 import loading from './../common/loading.vue'
 import backTop from './../common/back-top.vue'
-import goodsFilter from './goods-filter.vue'
+import searchFilter from './search-filter.vue'
 import productsList from './products-list.vue'
 const components = {
-    headnav, productsList, goodsFilter, loading, backTop
+    headnav, productsList, searchFilter, loading, backTop
 }
 export default {
     data() {
