@@ -51,7 +51,7 @@
   .uploadsub {
     height: 0.9rem;
     line-height: 0.9rem;
-    background-color: #ff2772;
+    background-color: #a5d7ee;
     color: white;
     text-align: center;
     position: fixed;
@@ -62,7 +62,7 @@
 </style>
 <template>
   <div class="upimg">
-    <headnav v-bind:title="pagetitle"></headnav>
+    <headnav v-bind:headConfig="headConfig"></headnav>
     <div class="uploadtip">
       请选择图片文件：JPG/PNG
       <i @click="deleteItem(file)"><em class="close">x</em>删除</i>
@@ -99,7 +99,12 @@
   export default{
     data(){
       return {
-        pagetitle: "上传头像",
+          headConfig : {
+              title : "上传头像",
+              backBtn : true,
+              leftIcon : true,
+              leftIconClass : 'icon-zuo'
+          },
         dialogConfig: {
           autoOff: true,
           txt: ''

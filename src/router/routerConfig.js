@@ -36,7 +36,7 @@ const infoFootBar   = resolve => {require(['./../component/mall/info-footer.vue'
 const commentList   = resolve => {require(['./../component/zone/comment-list.vue'], resolve)};
 const searchList    = resolve => {require(['./../component/mall/search-list.vue'],resolve)};
 const infoPage      = resolve => {require(['./../component/mall/info-page.vue'],resolve)};
-
+const upImg         = resolve => {require(['./../component/user/up-img.vue'],resolve)};
 const router = new VueRouter({
     routes: [
         {
@@ -186,6 +186,19 @@ const router = new VueRouter({
                     path:'/searchList',
                     components:{
                         main: searchList
+                    }
+                },
+                {
+                    path:'/upImg',
+                    components:{
+                        main: upImg
+                    }
+                },
+                {
+                    path:'/tcshop',
+                    components:{
+                        main: tcshop,
+                        footerMenu : footMenu
                     }
                 }
             ]
