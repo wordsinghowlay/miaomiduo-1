@@ -18,6 +18,41 @@
     <meta name="x5-fullscreen" content="true">
     <meta name="x5-page-mode" content="app">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no,telephone=no,address=no">
+    <script>
+        /*
+            微信拿code
+        */
+        // var nowUrl = window.location.href;
+        // let appId   = 'wx19b6308dd0519cb0';
+        // function getQueryString(name){
+        //     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        //     var r = window.location.search.substr(1).match(reg);
+        //     if (r != null) return decodeURIComponent(r[2]);
+        //     return null;
+        // }
+        // var code  = getQueryString('code')||getCookie('wxCode');
+        // var ua = window.navigator.userAgent.toLowerCase();
+        // function isWx(){
+        //     return (ua.match(/MicroMessenger/i) == 'micromessenger');
+        // }
+        // function getCookie(name){
+        //     var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        //     if(arr=document.cookie.match(reg)){
+        //         return unescape(arr[2]);
+        //     }else{
+        //         return null;
+        //     }
+        // }
+        // if(isWx()){
+        //     document.write("<script src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js'><\/script>");
+        //     if(!code){
+        //         location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' + appId + '&redirect_uri=' + encodeURIComponent(nowUrl) + '&response_type=code&scope=snsapi_base&state=123#wechat_redirect';
+        //     }
+        // }
+    </script>
+    <script type="text/javascript">
+        document.createElement('video');document.createElement('audio');document.createElement('track');
+    </script>
     <script type="text/javascript">
     var scale = 1 / devicePixelRatio;
     document.querySelector('meta[name="viewport"]').setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
@@ -38,6 +73,8 @@
         document.getElementsByTagName("html")[0].style.fontSize = fz + "px";
     };
     </script>
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
 	<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6AFnHONqIaKoj4iGB57UG1XRzDLQAONI"></script> -->
   </head>
   <body>

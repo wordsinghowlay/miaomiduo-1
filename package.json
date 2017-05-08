@@ -12,7 +12,9 @@
     "vue-lazyload": "^1.0.0-rc12",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.3",
-    "vuex": "^2.0.0"
+    "vuex": "^2.0.0",
+    "vuex-persistedstate": "^1.4.0",
+    "vue-file-upload": "^0.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -28,6 +30,7 @@
     "vue-loader": "^10.3.0",
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.2.1",
+    "vue-video": "^0.1.6",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^2.1.0-beta.0"
   }

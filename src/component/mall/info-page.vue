@@ -51,6 +51,16 @@
         <span>全国空运</span>
         <span>双C血统</span>
     </div>
+    <!-- <video id="example_video_1" class="video-js vjs-default-skin"
+          controls preload="auto" width="640" height="264"
+          poster="http://video-js.zencoder.com/oceans-clip.png"
+          data-setup='{"example_option":true}'>
+         <source src="http://covteam.u.qiniudn.com/oceans.mp4" type='video/mp4' />
+         <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+         <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+    </video> -->
+    <vueVideo v-bind:videoData="video"></vueVideo>
 </div>
 
 </template>
@@ -63,9 +73,9 @@ import {
 from 'vuex'
 import headnav from './../common/header.vue'
 import banner  from './../common/banner.vue'
-
+import vueVideo from './../common/video.vue'
 const components = {
-    headnav, banner
+    headnav, banner, vueVideo
 }
 export default {
     data() {
@@ -86,6 +96,10 @@ export default {
                 //修改swiper的父元素时，自动初始化swiper
                 // 如果需要分页器
                 pagination: '.swiper-pagination'
+            },
+            video: {
+                src: 'http://covteam.u.qiniudn.com/oceans.mp4',
+                poster: 'http://covteam.u.qiniudn.com/poster.png'
             }
         }
     },

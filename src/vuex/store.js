@@ -1,5 +1,6 @@
 import Vue 			from 'vue'
 import Vuex 		from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
 import * as actions from './actions'
 import * as getters from './getters'
 import indexData 	from './modules/indexData.js'
@@ -19,15 +20,16 @@ export default new Vuex.Store({
   actions,
   getters,
   modules : {
-    indexData,
-    userInfo,
-    mall,
-    tcShop,
-    activities,
-    trade,
-    other,
-    common,
-    zone
-  }
+        indexData,
+        userInfo,
+        mall,
+        tcShop,
+        activities,
+        trade,
+        other,
+        common,
+        zone
+    },
+    plugins: [createPersistedState({storage: window.sessionStorage})]
   //strict: true
 })

@@ -14,13 +14,6 @@ Vue.use(VueLazyload, {
   try: 3 // default 1
 })
 
-//import wxjssdk from './../static/jweixin-1.0.0.js'
-	//判断是否微信
-    let ua = window.navigator.userAgent.toLowerCase();
-    let isWx = (ua.match(/MicroMessenger/i) == 'micromessenger');
-	if (isWx) {
-
-	}
 
 new Vue({
   el: '#app',

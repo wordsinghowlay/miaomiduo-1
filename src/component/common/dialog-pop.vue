@@ -58,6 +58,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
 }
+    .dialog-cancle{color:#333;}
 </style>
 
 <template>
@@ -72,6 +73,9 @@
             </div>
             <div v-if="dialog.numCount" class="countWrap">
                 <numCount :number="number" v-on:numChange="numChange"></numCount>
+            </div>
+            <div v-if="dialog.password" class="passInput">
+                <input type="password" v-model="password" />
             </div>
         </div>
         <div v-if="dialog.btn" class="dialog-btn clearfix">
@@ -96,19 +100,23 @@ const components = {
 export default {
     data() {
         return {
-            number:{}
+            number:{},
+            password:null
         }
     },
-    computed:
-        mapGetters({
-        }),
     components: components,
     methods: {
         cancle:function(){
             this.$emit('dialogCancle')
         },
         ok:function(){
-            this.$emit('dialogConfirm',this.number.now)
+            if(this.dialog.numCount){
+                this.$emit('dialogConfirm',this.number.now)
+            }
+            if(this.dialog.password){
+                this.$emit('dialogConfirm',this.password)
+            }
+            this.$emit('dialogClickOk')
         },
         numChange:function(num){
             this.number.now = num;
@@ -128,5 +136,13 @@ export default {
         this.number.min = this.dialog.proNumMin;
     }
 }
-
+/*
+配置参数
+{
+    autoOff : 是否自动关闭 true false
+    autoOffTime : 自动关闭的时间  毫秒单位
+    txt : 提示的文字
+}
+off=> 当开启自动关闭的时候在倒计时完成之后会触发off事件
+*/
 </script>
